@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+/* 共通部分
+-------------------------------- */
+html {
+	font-size: 100%;
+}
+body {
+	/*書体の指定*/
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+	line-height: 1.7;         /*行の高さ*/
+	color: #432;              /*色の指定*/
+}
+a {
+ 	text-decoration: none;    /*<a>タグ傍線の指定*/
+}
+
+
+
+/* HEADER
+-------------------------------- */
+/*ナビゲーションを横並びにする*/
+.main-nav {
+	display: flex;
+	font-size: 1.10rem;
+	text-transform: uppercase;
+	margin-top: 34px;
+	list-style: none;
+}
+.main-nav li {
+	margin-left: 36px;
+}
+.main-nav a {
+	color: #432;
+}
+.main-nav a:hover {
+	color: #0bd;
+}
+
+/*ナビゲーションを中央に配置*/
+.page-header {
+	display: flex;
+	justify-content: flex-end;    /*フレックスコンテナの主軸の終点に揃える（右側）*/
+}
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+
+
+/* HOME
+------------------------------- */
+/*画面中央と余白指定*/
+.home-content {
+	text-align: center;
+	margin-top: 10%;
+}
+/*<p>タグのフォントサイズと余白指定*/
+.home-content p {
+	font-size: 1.125rem;
+	margin: 10px 0 42px;
+}
+
+/* 見出し */
+/*フォント指定*/
+.page-title {
+	font-size: 5rem;
+	font-family: 'Philosopher', serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+/* ボタン */
+.button {
+	font-size: 1.375rem;
+	background: #0bd;
+	color: #fff;
+	border-radius: 5px;          /*角丸装飾*/
+	padding: 18px 32px;
+}
+.button:hover {
+	background: #0090aa;         /*カーソルを重ねた時の色指定*/
+}
+
+
+/* 大きな背景画像 */
+.big-bg {
+	background-size: contain;        /*元画像の縦横比は保持して、要素に元画像が全て収まるように調整*/
+	background-position: center center;     /*背景画像の縦軸横軸を中心*/
+	background-repeat: no-repeat;    /*画像の繰り返し表示なし*/
+}
+
+#home {
+	/*背景画像の指定と円形グラデーション*/
+	background-image: url(../images/human-5337542.png), radial-gradient(#EEEEEE, #00CCFF);
+	background-blend-mode: darken;        /*画像の描画を暗め*/
+	min-height: 100vh;                    /*画像の最小の高さ*/
+}
+#home .page-title {
+	/*テキストの大文字、小文字全角の指定。「none」は変換しない指定*/
+	text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
